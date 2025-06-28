@@ -1,8 +1,16 @@
 ---
 layout: default
-title: Welcome
+title: "Welcome"
 ---
 
-# Hi, I'm Mohamed Mafaz 👋
+# Mohamed Mafaz
 
-Welcome to my personal portfolio website. I'm a data enthusiast, web developer, and lifelong learner.
+🎓 Data Analyst | ML Enthusiast | Visual Storyteller
+
+Hi, I'm Mafaz — passionate about solving real-world problems using data and machine learning.
+
+- 📊 Specialized in Power BI, Forecasting, and Text Classification
+- 🔍 Final Year Research: Zero-Shot ESG Event Classification
+- ✈️ Internship: Revenue Forecasting @ SriLankan Airlines
+
+👉 [View My Projects](/projects) | [See Resume](/resume) | [Contact Me](/contact)

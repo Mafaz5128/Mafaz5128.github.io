@@ -1,53 +1,43 @@
 # Site settings
 title: "Mohamed Mafaz"
-description: "Welcome to my personal portfolio website. I'm a data enthusiast, web developer, and lifelong learner."
-baseurl: "" # Leave empty for user site
-url: "https://mafaz5128.github.io" # ✅ Correct and lowercase
+description: "Welcome to my data analyst portfolio. Explore my projects, skills, and resume."
+baseurl: ""
+url: "https://mafaz5128.github.io"
 
-# Author info
+# Author
 author:
   name: "Mohamed Mafaz"
-  email: "mafaz5128@gmail.com"
+  email: "mafazmohamed4u@gmail.com"
   github: "Mafaz5128"
-  linkedin: "mafaz5128"
+  linkedin: "mafaz-mohamed"
   location: "Sri Lanka"
 
-# Build settings
+# Theme
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Navigation links
 navigation:
   - title: "Home"
     url: "/"
   - title: "Projects"
     url: "/projects"
+  - title: "Skills"
+    url: "/skills"
   - title: "Resume"
     url: "/resume"
   - title: "Contact"
     url: "/contact"
 
-# SEO and social sharing
 social:
   github: https://github.com/Mafaz5128
-  linkedin: https://linkedin.com/in/mafaz5128
-  twitter: https://twitter.com/mafaz5128 # Or delete this line if not used
-  email: mafaz5128@gmail.com
+  linkedin: https://linkedin.com/in/mafaz-mohamed
+  email: mafazmohamed4u@gmail.com
 
-# Markdown processor
 markdown: kramdown
-
-# Exclude folders
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-# Google Analytics (optional)
-google_analytics: "" # Add your tracking ID if needed
-
-# Deployment
-repository: Mafaz5128/Mafaz5128.github.io
