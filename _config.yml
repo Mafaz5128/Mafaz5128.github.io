@@ -1,24 +1,24 @@
 # Site settings
-title: "Mohamed Mafaz" # Change to your name
+title: "Mohamed Mafaz"
 description: "Welcome to my personal portfolio website. I'm a data enthusiast, web developer, and lifelong learner."
-baseurl: "" # Leave this blank unless your site is in a subfolder
-url: "https://Mafaz5128.github.io" # Change to your GitHub Pages URL
+baseurl: "" # Leave empty for user site
+url: "https://mafaz5128.github.io" # ✅ Correct and lowercase
 
 # Author info
 author:
   name: "Mohamed Mafaz"
-  email: "your-email@example.com"
-  github: "your-username"
-  linkedin: "your-linkedin-username"
+  email: "mafaz5128@gmail.com"
+  github: "Mafaz5128"
+  linkedin: "mafaz5128"
   location: "Sri Lanka"
 
 # Build settings
-theme: jekyll-theme-minimal # Or use another: jekyll-theme-cayman, jekyll-theme-slate, etc.
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Navigation links (optional)
+# Navigation links
 navigation:
   - title: "Home"
     url: "/"
@@ -31,10 +31,10 @@ navigation:
 
 # SEO and social sharing
 social:
-  github: https://github.com/your-username
-  linkedin: https://linkedin.com/in/your-linkedin-username
-  twitter: https://twitter.com/your-twitter-handle
-  email: your-email@example.com
+  github: https://github.com/Mafaz5128
+  linkedin: https://linkedin.com/in/mafaz5128
+  twitter: https://twitter.com/mafaz5128 # Or delete this line if not used
+  email: mafaz5128@gmail.com
 
 # Markdown processor
 markdown: kramdown
@@ -47,7 +47,7 @@ exclude:
   - vendor
 
 # Google Analytics (optional)
-google_analytics: UA-XXXXXXXXX-X
+google_analytics: "" # Add your tracking ID if needed
 
 # Deployment
-repository: Mafaz5128/Mafaz5128.github.io # For GitHub Pages
+repository: Mafaz5128/Mafaz5128.github.io
