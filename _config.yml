@@ -1,0 +1,53 @@
+# Site settings
+title: "Mohamed Mafaz" # Change to your name
+description: "Welcome to my personal portfolio website. I'm a data enthusiast, web developer, and lifelong learner."
+baseurl: "" # Leave this blank unless your site is in a subfolder
+url: "https://your-username.github.io" # Change to your GitHub Pages URL
+
+# Author info
+author:
+  name: "Mohamed Mafaz"
+  email: "your-email@example.com"
+  github: "your-username"
+  linkedin: "your-linkedin-username"
+  location: "Sri Lanka"
+
+# Build settings
+theme: jekyll-theme-minimal # Or use another: jekyll-theme-cayman, jekyll-theme-slate, etc.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation links (optional)
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects"
+  - title: "Resume"
+    url: "/resume"
+  - title: "Contact"
+    url: "/contact"
+
+# SEO and social sharing
+social:
+  github: https://github.com/your-username
+  linkedin: https://linkedin.com/in/your-linkedin-username
+  twitter: https://twitter.com/your-twitter-handle
+  email: your-email@example.com
+
+# Markdown processor
+markdown: kramdown
+
+# Exclude folders
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXXXXX-X
+
+# Deployment
+repository: your-username/your-repo-name # For GitHub Pages
