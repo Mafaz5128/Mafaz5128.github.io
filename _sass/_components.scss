@@ -1,0 +1,166 @@
+// Data Visualization Components
+.data-visualization {
+  background: white;
+  padding: 1.5rem;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+// Expertise Section
+.expertise-section {
+  padding: 4rem 1rem;
+  background-color: $background-color;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.expertise-card {
+  background: white;
+  padding: 2rem;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-md;
+  }
+  
+  i {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+    color: $secondary-color;
+  }
+  
+  p {
+    color: $light-text;
+    line-height: 1.6;
+  }
+}
+
+// Project Cards with Visualizations
+.project-card {
+  background: white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-md;
+  }
+  
+  .project-visual {
+    height: 200px;
+    background: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+    
+    h3 {
+      margin-bottom: 0.5rem;
+      color: $secondary-color;
+    }
+    
+    p {
+      color: $light-text;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Tech Tags
+.tech-tag {
+  display: inline-block;
+  background: rgba($primary-color, 0.1);
+  color: $primary-color;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Blog Posts
+.blog-post {
+  background: white;
+  padding: 2rem;
+  border-radius: $border-radius-lg;
+  margin-bottom: 2rem;
+  box-shadow: $shadow-sm;
+  
+  h3 {
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  
+  .post-meta {
+    color: $light-text;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
