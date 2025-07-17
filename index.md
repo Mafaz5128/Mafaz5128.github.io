@@ -6,7 +6,7 @@ title: Home
 # Mohamed Mafaz  
 ### Data Analyst | Business Intelligence Specialist  
 
-![Profile Photo](/images/profile.jpg){: .profile-image}
+![Profile Photo](/assests/images/profile.jpg){: .profile-image}
 
 Welcome to my data analytics portfolio! I specialize in transforming complex data into clear, actionable insights that drive business decisions.
 
