@@ -1,3 +1,7 @@
+
+## 4. projects.md
+
+```markdown
 ---
 layout: default
 title: Projects
@@ -5,39 +9,50 @@ title: Projects
 
 # Data Analytics Projects
 
-## 1. Sales Performance Dashboard
+<div class="project-grid">
 
-![Sales Dashboard](/images/project-sales.png){: style="width:100%; max-width:600px; border:1px solid #ddd;"}
+## 1. Retail Sales Analysis Dashboard
+![Retail Dashboard](/assets/images/project-retail.png){: .project-image}
 
-**Tools:** Power BI, SQL, Excel  
-**Description:** Interactive dashboard tracking sales performance across regions and product categories with drill-down capabilities.  
-**Key Achievements:**  
-- Reduced monthly reporting time by 40%  
-- Identified $250K in untapped revenue opportunities  
-[View on GitHub](#){: .btn}  
+**Tools:** Power BI, SQL, DAX  
+**Duration:** 3 months  
+**Impact:**  
+- 40% reduction in reporting time  
+- Identified $120K revenue opportunities  
+- Improved inventory turnover by 15%  
 
----
-
-## 2. Customer Churn Prediction Model
-
-![Churn Analysis](/images/project-churn.png){: style="width:100%; max-width:600px; border:1px solid #ddd;"}
-
-**Tools:** Python (Pandas, Scikit-learn), Jupyter Notebooks  
-**Description:** Machine learning model predicting customer churn with 85% accuracy using historical transaction data.  
-**Key Features:**  
-- Feature engineering to identify key churn indicators  
-- SHAP values for model interpretability  
-[View on GitHub](#){: .btn}  
+[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
 
 ---
 
-## 3. COVID-19 Data Exploration
+## 2. Customer Segmentation Model
+![Segmentation Model](/assets/images/project-segmentation.png){: .project-image}
 
-![COVID Dashboard](/images/project-covid.png){: style="width:100%; max-width:600px; border:1px solid #ddd;"}
+**Tools:** Python (Pandas, Scikit-learn), Jupyter  
+**Techniques:**  
+- RFM analysis  
+- K-means clustering  
+- PCA for dimensionality reduction  
+
+**Outcome:**  
+- 22% improvement in campaign targeting  
+- Identified 4 distinct customer personas  
+
+[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
+
+---
+
+## 3. COVID-19 Impact Analysis
+![COVID Analysis](/assets/images/project-covid.png){: .project-image}
 
 **Tools:** R, ggplot2, Tableau  
-**Description:** Comprehensive analysis of pandemic trends with focus on regional comparisons and vaccination impact.  
-**Key Insights:**  
-- Identified 3 key factors correlating with case fatality rates  
-- Created animated visualizations of spread patterns  
-[View on GitHub](#){: .btn}  
+**Scope:**  
+- Regional infection rate comparisons  
+- Vaccination effectiveness analysis  
+- Economic impact modeling  
+
+**Published:** Featured in Sri Lanka Data Science Journal  
+
+[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
+
+</div>
