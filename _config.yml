@@ -1,54 +1,76 @@
-# Site settings
-title: "Mohamed Mafaz"
-description: "Data Analyst | Business Intelligence Specialist | Transforming data into actionable insights"
-baseurl: ""
+# Advanced Site Configuration
+title: "Mohamed Mafaz | Data Analytics Portfolio"
+description: "Transforming raw data into strategic insights with advanced analytics and visualization"
 url: "https://mafaz5128.github.io"
+baseurl: ""
+timezone: Asia/Colombo
+future: true
 
-# Author
+# Advanced Author Info
 author:
   name: "Mohamed Mafaz"
-  email: "mafazmohamed4u@gmail.com"
-  github: "Mafaz5128"
-  linkedin: "mafaz-mohamed"
+  role: "Senior Data Analyst"
   location: "Colombo, Sri Lanka"
-  job_title: "Data Analyst"
+  email: "mafazmohamed4u@gmail.com"
+  availability: "Available for freelance projects"
+  social:
+    - name: "LinkedIn"
+      icon: "linkedin"
+      url: "https://linkedin.com/in/mafaz-mohamed"
+    - name: "GitHub"
+      icon: "github"
+      url: "https://github.com/Mafaz5128"
+    - name: "Kaggle"
+      icon: "kaggle"
+      url: "https://kaggle.com/mafaz"
+    - name: "Tableau Public"
+      icon: "tableau"
+      url: "https://public.tableau.com/app/profile/mafaz"
 
-# Theme
+# Advanced Theme Settings
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
+  - jekyll-paginate-v2
 
-# Navigation
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# Performance Optimization
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: false
 
+# Advanced Navigation
 navigation:
   - title: "Home"
     url: "/"
-  - title: "About"
-    url: "/about"
+    icon: "home"
   - title: "Projects"
     url: "/projects"
+    icon: "folder"
   - title: "Skills"
     url: "/skills"
+    icon: "code"
   - title: "Resume"
     url: "/resume"
+    icon: "file-text"
+  - title: "Blog"
+    url: "/blog"
+    icon: "pen"
   - title: "Contact"
     url: "/contact"
+    icon: "email"
 
-# Social links
-social:
-  github: https://github.com/Mafaz5128
-  linkedin: https://linkedin.com/in/mafaz-mohamed
-  email: mailto:mafazmohamed4u@gmail.com
+# Analytics
+analytics:
+  google: "UA-XXXXX-Y"
+  plausible: "mafaz5128.github.io"
 
-markdown: kramdown
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
+# Custom Variables
+custom:
+  chart_theme: "dark"
+  animation_enabled: true
+  dark_mode: true
