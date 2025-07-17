@@ -1,76 +1,55 @@
-# Advanced Site Configuration
-title: "Mohamed Mafaz | Data Analytics Portfolio"
-description: "Transforming raw data into strategic insights with advanced analytics and visualization"
-url: "https://mafaz5128.github.io"
+title: Jane Smith | Data Analyst & AI Enthusiast
+email: jane.smith@example.com
+description: >-
+  Data professional specializing in analytics, visualization, and machine learning applications.
 baseurl: ""
-timezone: Asia/Colombo
-future: true
+url: "https://yourusername.github.io"
+twitter_username: janedata
+github_username: yourusername
+linkedin_username: yourusername
+kaggle_username: yourusername
 
-# Advanced Author Info
-author:
-  name: "Mohamed Mafaz"
-  role: "Senior Data Analyst"
-  location: "Colombo, Sri Lanka"
-  email: "mafazmohamed4u@gmail.com"
-  availability: "Available for freelance projects"
-  social:
-    - name: "LinkedIn"
-      icon: "linkedin"
-      url: "https://linkedin.com/in/mafaz-mohamed"
-    - name: "GitHub"
-      icon: "github"
-      url: "https://github.com/Mafaz5128"
-    - name: "Kaggle"
-      icon: "kaggle"
-      url: "https://kaggle.com/mafaz"
-    - name: "Tableau Public"
-      icon: "tableau"
-      url: "https://public.tableau.com/app/profile/mafaz"
-
-# Advanced Theme Settings
-theme: jekyll-theme-minimal
+# Build settings
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-analytics
-  - jekyll-paginate-v2
-
-# Performance Optimization
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  blanklines: false
-
-# Advanced Navigation
-navigation:
-  - title: "Home"
-    url: "/"
-    icon: "home"
-  - title: "Projects"
-    url: "/projects"
-    icon: "folder"
-  - title: "Skills"
-    url: "/skills"
-    icon: "code"
-  - title: "Resume"
-    url: "/resume"
-    icon: "file-text"
-  - title: "Blog"
-    url: "/blog"
-    icon: "pen"
-  - title: "Contact"
-    url: "/contact"
-    icon: "email"
 
 # Analytics
-analytics:
-  google: "UA-XXXXX-Y"
-  plausible: "mafaz5128.github.io"
+google_analytics: UA-XXXXX-X
 
-# Custom Variables
-custom:
-  chart_theme: "dark"
-  animation_enabled: true
-  dark_mode: true
+# Custom variables
+tools:
+  - name: Python
+    level: 90
+  - name: SQL
+    level: 95
+  - name: R
+    level: 80
+  - name: Tableau/PowerBI
+    level: 85
+  - name: TensorFlow/PyTorch
+    level: 75
+  - name: Spark
+    level: 70
+
+ml_skills:
+  - Supervised Learning
+  - Unsupervised Learning
+  - NLP
+  - Computer Vision
+  - Time Series Forecasting
+
+social:
+  - name: GitHub
+    url: https://github.com/yourusername
+    icon: github
+  - name: LinkedIn
+    url: https://linkedin.com/in/yourusername
+    icon: linkedin
+  - name: Kaggle
+    url: https://kaggle.com/yourusername
+    icon: kaggle
+  - name: Twitter
+    url: https://twitter.com/janedata
+    icon: twitter
