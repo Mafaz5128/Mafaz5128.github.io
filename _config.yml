@@ -1,13 +1,15 @@
-title: Jane Smith | Data Analyst & AI Enthusiast
-email: jane.smith@example.com
+title: Mafaz Manzil | Professional Data Analyst & AI/ML Enthusiast
+email: mafazmohamed4u@gmail.com
 description: >-
-  Data professional specializing in analytics, visualization, and machine learning applications.
+  Data isn't just history — it's a roadmap to what's next
 baseurl: ""
-url: "https://yourusername.github.io"
-twitter_username: janedata
-github_username: yourusername
-linkedin_username: yourusername
-kaggle_username: yourusername
+url: "https://mafaz5128.github.io/"
+github_username: Mafaz5128
+linkedin_username: Mafaz Manzil
+kaggle_username: Mafaz Mohamed
+
+# Analytics
+google_analytics: UA-XXXXX-X
 
 # Build settings
 theme: minima
@@ -15,41 +17,46 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Analytics
-google_analytics: UA-XXXXX-X
+# Custom data
+skills:
+  - category: "Data Analysis & Visualization"
+    items:
+      - "Power BI"
+      - "Tableau"
+      - "Excel"
+      - "Looker Studio"
+      - "Dashboard development"
+      - "KPI tracking"
+      - "Data storytelling"
+    certifications:
+      - "Microsoft Power BI Certified"
+      - "Tableau Specialist"
 
-# Custom variables
-tools:
-  - name: Python
-    level: 90
-  - name: SQL
-    level: 95
-  - name: R
-    level: 80
-  - name: Tableau/PowerBI
-    level: 85
-  - name: TensorFlow/PyTorch
-    level: 75
-  - name: Spark
-    level: 70
+  - category: "Data Processing"
+    items:
+      - "SQL (Advanced)"
+      - "Python (Pandas, NumPy)"
+      - "R"
+      - "MySQL"
+      - "PostgreSQL"
+      - "BigQuery"
+      - "ETL pipelines"
+      - "Data cleaning"
+      - "Query optimization"
 
-ml_skills:
-  - Supervised Learning
-  - Unsupervised Learning
-  - NLP
-  - Computer Vision
-  - Time Series Forecasting
+  - category: "Machine Learning"
+    items:
+      - "Scikit-learn"
+      - "TensorFlow"
+      - "Regression"
+      - "Classification"
+      - "Clustering"
+      - "Customer churn prediction"
+      - "Sales forecasting"
 
-social:
-  - name: GitHub
-    url: https://github.com/yourusername
-    icon: github
-  - name: LinkedIn
-    url: https://linkedin.com/in/yourusername
-    icon: linkedin
-  - name: Kaggle
-    url: https://kaggle.com/yourusername
-    icon: kaggle
-  - name: Twitter
-    url: https://twitter.com/janedata
-    icon: twitter
+  - category: "Business Intelligence"
+    items:
+      - "Requirements gathering"
+      - "Stakeholder management"
+      - "ROI analysis"
+      - "Process optimization"
