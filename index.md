@@ -5,7 +5,7 @@ title: "Welcome"
 
 # Mohamed Mafaz
 
-🎓 Data Analyst | ML Enthusiast | Visual Storyteller
+🎓 Professional Data Analyst | AI & ML Enthusiast 
 
 Hi, I'm Mafaz — passionate about solving real-world problems using data and machine learning.
 
