@@ -1,6 +1,6 @@
 # Site settings
 title: "Mohamed Mafaz"
-description: "Welcome to my data analyst portfolio. Explore my projects, skills, and resume."
+description: "Data Analyst | Business Intelligence Specialist | Transforming data into actionable insights"
 baseurl: ""
 url: "https://mafaz5128.github.io"
 
@@ -10,7 +10,8 @@ author:
   email: "mafazmohamed4u@gmail.com"
   github: "Mafaz5128"
   linkedin: "mafaz-mohamed"
-  location: "Sri Lanka"
+  location: "Colombo, Sri Lanka"
+  job_title: "Data Analyst"
 
 # Theme
 theme: jekyll-theme-minimal
@@ -18,9 +19,18 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Navigation
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 navigation:
   - title: "Home"
     url: "/"
+  - title: "About"
+    url: "/about"
   - title: "Projects"
     url: "/projects"
   - title: "Skills"
@@ -30,10 +40,11 @@ navigation:
   - title: "Contact"
     url: "/contact"
 
+# Social links
 social:
   github: https://github.com/Mafaz5128
   linkedin: https://linkedin.com/in/mafaz-mohamed
-  email: mafazmohamed4u@gmail.com
+  email: mailto:mafazmohamed4u@gmail.com
 
 markdown: kramdown
 exclude:
