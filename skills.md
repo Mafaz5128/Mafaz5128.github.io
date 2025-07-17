@@ -1,22 +1,31 @@
 ---
 layout: default
-title: "Skills"
+title: Skills
 ---
 
-# 🚀 Skills
+# Technical Skills
 
-## 🧰 Programming & Tools
-- Python, SQL, Git
-- Flask, Streamlit
+## Data Analysis & Visualization
+- **Tools:** Tableau, Power BI, Looker, Excel
+- **Skills:** Dashboard creation, KPI tracking, trend analysis, data storytelling
 
-## 📊 Data Visualization
-- Power BI, Excel, Matplotlib
+## Programming & Databases
+- **Languages:** SQL, Python (Pandas, NumPy), R
+- **Databases:** PostgreSQL, MySQL, BigQuery
+- **Skills:** Query optimization, ETL processes, data modeling
 
-## 🤖 Machine Learning
-- Scikit-learn, Deep Learning, Time Series Forecasting
+## Machine Learning & Statistics
+- **Frameworks:** Scikit-learn, TensorFlow
+- **Skills:** Regression analysis, classification, clustering, hypothesis testing
 
-## 🔤 Natural Language Processing
-- BERT, BART, Zero-Shot Learning
+## Business Intelligence
+- Requirements gathering
+- Stakeholder management
+- ROI analysis
+- Process improvement
 
-## 📎 Others
-- Web Scraping, GitHub, APIs
+# Soft Skills
+- Problem-solving
+- Critical thinking
+- Communication
+- Project management
