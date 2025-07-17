@@ -7,25 +7,28 @@ title: About
 
 ## Professional Summary
 
-Detail-oriented data analyst with [X] years of experience interpreting and analyzing data to drive successful business solutions. Proficient knowledge in statistics, mathematics, and analytics. Excellent understanding of business operations and analytics tools for effective analyses of data.
+Certified Data Analyst with 2+ years of experience in interpreting and analyzing data to drive business solutions. Strong background in statistics, data visualization, and business intelligence. Passionate about uncovering insights that lead to measurable business impact.
 
 ## Education
 
-**Degree in [Your Field]**  
-[University Name], [Year]  
-- Relevant coursework: Statistics, Data Mining, Database Systems, Machine Learning
+**BSc in Information Technology**  
+University of Colombo School of Computing, 2022  
+- Specialized in Data Science and Business Analytics
+- GPA: 3.8/4.0
 
 ## Certifications
 
-- Google Data Analytics Professional Certificate (202X)
-- Microsoft Certified: Data Analyst Associate (202X)
-- Tableau Desktop Certified Associate (202X)
+- Google Data Analytics Professional Certificate (2023)
+- Microsoft Power BI Data Analyst Associate (2023)
+- Tableau Desktop Specialist (2022)
 
-## Work Experience
+## Technical Proficiencies
 
-**Data Analyst** @ [Company Name] | [Dates]  
-- Developed and maintained dashboards using Tableau/Power BI that reduced reporting time by 30%
-- Performed data cleaning and transformation for 10+ business units
-- Created predictive models that improved customer retention by 15%
-
-[Download My Resume](#){: .btn}
+```mermaid
+pie
+    title Tools & Technologies
+    "SQL" : 30
+    "Python" : 25
+    "Power BI" : 20
+    "Tableau" : 15
+    "Excel" : 10
