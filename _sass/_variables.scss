@@ -1,0 +1,41 @@
+// Colors
+$primary-color: #7c3aed;
+$secondary-color: #1e293b;
+$accent-color: #10b981;
+$text-color: #334155;
+$light-text: #64748b;
+$background-color: #f8fafc;
+$dark-background: #0f172a;
+
+// Data Visualization Colors
+$viz-color-1: #7c3aed;
+$viz-color-2: #10b981;
+$viz-color-3: #3b82f6;
+$viz-color-4: #f59e0b;
+$viz-color-5: #ef4444;
+
+// Typography
+$font-main: 'Inter', sans-serif;
+$font-mono: 'Source Code Pro', monospace;
+$base-font-size: 16px;
+$heading-scale: 1.25;
+
+// Spacing
+$base-spacing: 1rem;
+$spacing-scale: 1.5;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Borders
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
