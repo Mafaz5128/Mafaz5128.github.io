@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# [Your Name]  
+# [Mafaz Manzil]  
 ### Data Analyst | Business Intelligence Specialist  
 
 ![Profile Photo](/images/profile.jpg){: style="width:200px; border-radius:50%; float:right; margin-left:20px;"}
