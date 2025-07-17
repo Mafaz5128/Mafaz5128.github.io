@@ -1,16 +1,21 @@
 ---
 layout: default
-title: "Welcome"
+title: Home
 ---
 
-# Mohamed Mafaz
+# [Your Name]  
+### Data Analyst | Business Intelligence Specialist  
 
-🎓 Professional Data Analyst | AI & ML Enthusiast 
+![Profile Photo](/images/profile.jpg){: style="width:200px; border-radius:50%; float:right; margin-left:20px;"}
 
-Hi, I'm Mafaz — passionate about solving real-world problems using data and machine learning.
+Welcome to my data analytics portfolio! I transform raw data into meaningful insights that drive business decisions.
 
-- 📊 Specialized in Power BI, Forecasting, and Text Classification
-- 🔍 Final Year Research: Zero-Shot ESG Event Classification
-- ✈️ Internship: Revenue Forecasting @ SriLankan Airlines
+**What I offer:**
+- 📊 Data visualization and dashboard creation
+- 🔍 Exploratory data analysis
+- 📈 Business performance metrics
+- 🤖 Predictive modeling
+- 🗃️ Data cleaning and preprocessing
 
-👉 [View My Projects](/projects) | [See Resume](/resume) | [Contact Me](/contact)
+[View My Projects](/projects){: .btn}  
+[Learn About Me](/about){: .btn}
