@@ -1,58 +1,43 @@
-
-## 4. projects.md
-
-```markdown
 ---
 layout: default
 title: Projects
 ---
 
-# Data Analytics Projects
+<section class="projects-header">
+  <h1>Data Projects</h1>
+  <p>Selected case studies demonstrating my analytical approach and technical skills</p>
+</section>
 
-<div class="project-grid">
+<div class="projects-filter">
+  <button class="filter-btn active" data-filter="all">All Projects</button>
+  <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+  <button class="filter-btn" data-filter="viz">Visualization</button>
+  <button class="filter-btn" data-filter="ml">Machine Learning</button>
+</div>
 
-## 1. Retail Sales Analysis Dashboard
-![Retail Dashboard](/assets/images/project-retail.png){: .project-image}
-
-**Tools:** Power BI, SQL, DAX  
-**Duration:** 3 months  
-**Impact:**  
-- 40% reduction in reporting time  
-- Identified $120K revenue opportunities  
-- Improved inventory turnover by 15%  
-
-[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
-
----
-
-## 2. Customer Segmentation Model
-![Segmentation Model](/assets/images/project-segmentation.png){: .project-image}
-
-**Tools:** Python (Pandas, Scikit-learn), Jupyter  
-**Techniques:**  
-- RFM analysis  
-- K-means clustering  
-- PCA for dimensionality reduction  
-
-**Outcome:**  
-- 22% improvement in campaign targeting  
-- Identified 4 distinct customer personas  
-
-[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
-
----
-
-## 3. COVID-19 Impact Analysis
-![COVID Analysis](/assets/images/project-covid.png){: .project-image}
-
-**Tools:** R, ggplot2, Tableau  
-**Scope:**  
-- Regional infection rate comparisons  
-- Vaccination effectiveness analysis  
-- Economic impact modeling  
-
-**Published:** Featured in Sri Lanka Data Science Journal  
-
-[View Details](#){: .btn .btn-outline} | [GitHub Repo](#){: .btn .btn-outline}
-
+<div class="projects-container">
+  {% for project in site.data.projects %}
+  <div class="project-item" data-category="{{ project.category }}">
+    <div class="project-image">
+      <img src="{{ project.image }}" alt="{{ project.title }}">
+    </div>
+    <div class="project-details">
+      <h3>{{ project.title }}</h3>
+      <div class="project-meta">
+        <span class="project-category">{{ project.category }}</span>
+        <span class="project-date">{{ project.date }}</span>
+      </div>
+      <p>{{ project.description }}</p>
+      <div class="project-links">
+        <a href="{{ project.url }}" class="btn btn-primary">Case Study</a>
+        {% if project.github %}
+        <a href="{{ project.github }}" class="btn btn-outline">View Code</a>
+        {% endif %}
+        {% if project.kaggle %}
+        <a href="{{ project.kaggle }}" class="btn btn-outline">Kaggle Notebook</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
