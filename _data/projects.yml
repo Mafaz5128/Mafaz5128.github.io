@@ -1,0 +1,27 @@
+- title: "Customer Segmentation Analysis"
+  description: "Used clustering algorithms to identify distinct customer groups for targeted marketing campaigns."
+  category: "ml"
+  technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"]
+  date: "2023-03-15"
+  image: "/assets/images/project1.jpg"
+  url: "/projects/customer-segmentation"
+  github: "https://github.com/yourusername/customer-segmentation"
+  kaggle: "https://kaggle.com/yourusername/customer-segmentation"
+
+- title: "COVID-19 Dashboard"
+  description: "Interactive dashboard tracking pandemic metrics with predictive modeling for hospital capacity."
+  category: "viz"
+  technologies: ["Tableau", "Python", "SQL"]
+  date: "2022-11-20"
+  image: "/assets/images/project2.jpg"
+  url: "/projects/covid-dashboard"
+  github: "https://github.com/yourusername/covid-dashboard"
+
+- title: "Sales Forecasting"
+  description: "Time series analysis and forecasting model for retail sales data with 92% accuracy."
+  category: "ml"
+  technologies: ["Python", "Prophet", "TensorFlow", "Pandas"]
+  date: "2023-01-10"
+  image: "/assets/images/project3.jpg"
+  url: "/projects/sales-forecasting"
+  github: "https://github.com/yourusername/sales-forecasting"
