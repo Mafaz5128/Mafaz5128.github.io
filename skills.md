@@ -5,27 +5,34 @@ title: Skills
 
 # Technical Skills
 
+<div class="skills-container">
+
 ## Data Analysis & Visualization
-- **Tools:** Tableau, Power BI, Looker, Excel
-- **Skills:** Dashboard creation, KPI tracking, trend analysis, data storytelling
+- **Tools:** Power BI, Tableau, Excel, Looker Studio
+- **Skills:** Dashboard development, KPI tracking, data storytelling
+- **Certifications:** Microsoft Power BI Certified, Tableau Specialist
 
-## Programming & Databases
-- **Languages:** SQL, Python (Pandas, NumPy), R
-- **Databases:** PostgreSQL, MySQL, BigQuery
-- **Skills:** Query optimization, ETL processes, data modeling
+## Data Processing
+- **Languages:** SQL (Advanced), Python (Pandas, NumPy), R
+- **Databases:** MySQL, PostgreSQL, BigQuery
+- **Skills:** ETL pipelines, data cleaning, query optimization
 
-## Machine Learning & Statistics
+## Machine Learning
 - **Frameworks:** Scikit-learn, TensorFlow
-- **Skills:** Regression analysis, classification, clustering, hypothesis testing
+- **Techniques:** Regression, classification, clustering
+- **Projects:** Customer churn prediction, sales forecasting
 
 ## Business Intelligence
 - Requirements gathering
 - Stakeholder management
 - ROI analysis
-- Process improvement
+- Process optimization
+
+</div>
 
 # Soft Skills
+- Analytical thinking
 - Problem-solving
-- Critical thinking
 - Communication
 - Project management
+- Team collaboration
