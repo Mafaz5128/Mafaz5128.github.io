@@ -32,7 +32,7 @@
         
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
         }
         
         .skill-pill {
@@ -51,15 +51,10 @@
         
         /* Glass morphism effect */
         .glass-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(30, 41, 59, 0.5);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        
-        .dark .glass-card {
-            background: rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         /* Gradient text */
@@ -68,36 +63,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-        }
-        
-        /* Dark mode toggle styles */
-        .dark-mode-toggle {
-            position: relative;
-            width: 60px;
-            height: 30px;
-            border-radius: 15px;
-            background-color: #e2e8f0;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .dark-mode-toggle.active {
-            background-color: #4b5563;
-        }
-        
-        .toggle-knob {
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: white;
-            transition: transform 0.3s;
-        }
-        
-        .dark-mode-toggle.active .toggle-knob {
-            transform: translateX(30px);
         }
         
         /* Carousel styles */
@@ -119,17 +84,17 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.3);
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         
         .carousel-dot.active {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(99, 102, 241, 0.9);
         }
         
         .carousel-dot:hover {
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.5);
         }
         
         .dashboard-desc {
@@ -142,24 +107,24 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-gray-900 text-gray-100">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-50 shadow-sm">
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 shadow-sm border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <span class="text-xl font-bold gradient-text">Mafaz Manzil</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
-                    <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
-                    <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Skills</a>
-                    <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projects</a>
-                    <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Experience</a>
-                    <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
+                    <a href="#home" class="text-gray-300 hover:text-indigo-400 transition">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition">Projects</a>
+                    <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobileMenuButton" class="text-gray-700 dark:text-gray-300">
+                    <button id="mobileMenuButton" class="text-gray-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -169,19 +134,14 @@
         </div>
         
         <!-- Mobile menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 pb-4 px-4 shadow-lg">
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-800 pb-4 px-4 shadow-lg border-b border-slate-700">
             <div class="flex flex-col space-y-3">
-                <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
-                <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
-                <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Skills</a>
-                <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projects</a>
-                <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Experience</a>
-                <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
-                <div class="flex items-center pt-2">
-                    <div class="dark-mode-toggle" id="mobileDarkModeToggle">
-                        <div class="toggle-knob"></div>
-                    </div>
-                </div>
+                <a href="#home" class="text-gray-300 hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition">Projects</a>
+                <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition">Experience</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -192,22 +152,22 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Mafaz Manzil</span></h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">Data Analyst | AI & Machine Learning Enthusiast</h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">Focused on creating impact through clarity, action, and integrity.</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-400">Data Analyst | AI & Machine Learning Enthusiast</h2>
+                    <p class="text-lg text-gray-400 mb-8">Focused on creating impact through clarity, action, and integrity.</p>
                     <div class="flex flex-wrap gap-4">
                         <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition shadow-md hover:shadow-lg">Get In Touch</a>
-                        <a href="#projects" class="px-6 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-800 transition">View My Work</a>
+                        <a href="#projects" class="px-6 py-3 border border-indigo-600 text-indigo-400 rounded-lg hover:bg-slate-800 transition">View My Work</a>
                         <a href="Mafaz Resume.pdf" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition shadow-md hover:shadow-lg inline-flex items-center">Download Resume</a>
                     </div>
                 </div>
                 <div class="fade-in delay-1 flex justify-center">
                     <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                        <div class="absolute inset-0 bg-indigo-100 dark:bg-indigo-900 rounded-full opacity-20"></div>
-                        <div class="absolute inset-4 bg-indigo-200 dark:bg-indigo-800 rounded-full opacity-30"></div>
-                        <div class="absolute inset-8 bg-indigo-300 dark:bg-indigo-700 rounded-full opacity-40"></div>
+                        <div class="absolute inset-0 bg-indigo-900 rounded-full opacity-20"></div>
+                        <div class="absolute inset-4 bg-indigo-800 rounded-full opacity-30"></div>
+                        <div class="absolute inset-8 bg-indigo-700 rounded-full opacity-40"></div>
                         <img src="Profile.jpg" 
                              alt="Mafaz Manzil" 
-                             class="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl">
+                             class="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-xl">
                     </div>
                 </div>
             </div>
@@ -215,53 +175,56 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-800">
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-800">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in">About Me</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="glass-card p-8 rounded-xl shadow-md card-hover fade-in delay-1">
-                    <div class="text-indigo-600 dark:text-indigo-400 mb-4">
+                    <div class="text-indigo-400 mb-4">
                         <i class="ph-graduation-cap text-4xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Education</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Education</h3>
                     <div class="mb-6">
-                        <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+                        <p class="text-lg font-semibold text-gray-200">
                             BSc (Hons) in Industrial Statistics
                         </p>
-                        <p class="text-base text-gray-600 dark:text-gray-300">
+                        <p class="text-base text-gray-300">
                             University of Colombo – Faculty of Science
                         </p>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                        <p class="text-sm text-gray-400 mb-1">
                         2021 – 2025 | Colombo, Sri Lanka
                         </p>
 
                     <div class="flex flex-wrap gap-4 mb-2">
-                        <span class="text-sm bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200 px-2 py-1 rounded">
+                        <span class="text-sm bg-indigo-900/50 text-indigo-200 px-2 py-1 rounded">
                         GPA: 3.3
                         </span>
-                        <span class="text-sm bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200 px-2 py-1 rounded">
+                        <span class="text-sm bg-green-900/50 text-green-200 px-2 py-1 rounded">
                         Second Class (Upper Division)
                         </span>
                     </div>
 
-                        <p class="text-sm text-gray-600 dark:text-gray-300">
-                            <strong class="text-gray-800 dark:text-gray-100">Key Coursework:</strong>
+                        <p class="text-sm text-gray-300">
+                            <strong class="text-white">Key Coursework:</strong>
                             Statistics, Mathematics, Data Science, Computer Science
                         </p>
                     </div>
                 </div>
                 <div class="glass-card p-8 rounded-xl shadow-md card-hover fade-in delay-2">
-                    <div class="text-indigo-600 dark:text-indigo-400 mb-4">
+                    <div class="text-indigo-400 mb-4">
                         <i class="ph-briefcase text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Professional Summary</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Energetic and ambitious data science enthusiast with hands-on experience in data
+                    <h3 class="text-xl font-semibold mb-3 text-white">Professional Summary</h3>
+                    <p class="text-gray-300">Energetic and ambitious data science enthusiast with hands-on experience in data
                         analysis, forecasting, and model development. Proficient in Python, Machine learning,
                         Deep learning, NLP, and data visualization. Eager to apply data-driven thinking to
                         solve real-world problems and grow in innovative environments with an
                         entrepreneurial spirit.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
@@ -271,24 +234,24 @@
                 <!-- Data Analysis -->
                 <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-1">
                     <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Data Analysis</h3>
+                        <h3 class="text-xl font-semibold text-white">Data Analysis</h3>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-5 h-5 mr-2" alt="Python"/>
                             <span>Python</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46L6 10.72 4.54 8.27H2.4l2.34 3.8-2.38 3.87h2.12zm10.46 2.66h2.12v-2.12h-2.12zm0-4.24h2.12V9.78h-2.12zm0-4.24h2.12V5.54h-2.12zm4.24 8.48h2.12v-2.12h-2.12zm0-4.24h2.12V9.78h-2.12zm0-4.24h2.12V5.54h-2.12z" fill="#217346"/>
                             </svg>
                             <span>Excel</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-5 h-5 mr-2" alt="Pandas"/>
                             <span>Pandas</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-5 h-5 mr-2" alt="NumPy"/>
                             <span>NumPy</span>
                         </div>
@@ -298,32 +261,32 @@
                 <!-- Visualization -->
                 <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-2">
                     <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Visualization</h3>
+                        <h3 class="text-xl font-semibold text-white">Visualization</h3>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="assets/tableau-svgrepo-com.svg" class="w-5 h-5 mr-2" alt="Tableau"/>
                             <span>Tableau</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="assets/power-bi-icon.svg" class="w-5 h-5 mr-2" alt="Power Bi"/>
                             <span>Power BI</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46L6 10.72 4.54 8.27H2.4l2.34 3.8-2.38 3.87h2.12zm10.46 2.66h2.12v-2.12h-2.12zm0-4.24h2.12V9.78h-2.12zm0-4.24h2.12V5.54h-2.12zm4.24 8.48h2.12v-2.12h-2.12zm0-4.24h2.12V9.78h-2.12zm0-4.24h2.12V5.54h-2.12z" fill="#217346"/>
                             </svg>
                             <span>Excel</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" class="w-5 h-5 mr-2" alt="Matplotlib"/>
                             <span>Matplotlib</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="assets/seaborn-1.svg" class="w-5 h-5 mr-2" alt="Seaborn"/>
                             <span>Seaborn</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="assets/plotly-icon.svg" class="w-5 h-5 mr-2" alt="Plotly"/>
                             <span>Plotly</span>
                         </div>
@@ -333,22 +296,22 @@
                 <!-- Databases -->
                 <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-3">
                     <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Databases</h3>
+                        <h3 class="text-xl font-semibold text-white">Databases</h3>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-5 h-5 mr-2" alt="PostgreSQL"/>
                             <span>PostgreSQL</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 h-5 mr-2" alt="MySQL"/>
                             <span>MySQL</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="assets/Azure SQL Database.svg" class="w-5 h-5 mr-2" alt="Azure SQL"/>
                             <span>Azure SQL</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="w-5 h-5 mr-2" alt="MSSQL"/>
                             <span>MSSQL</span>
                         </div>
@@ -358,166 +321,125 @@
                 <!-- Machine Learning -->
                 <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-4">
                     <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">ML & AI</h3>
+                        <h3 class="text-xl font-semibold text-white">ML & AI</h3>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="w-5 h-5 mr-2" alt="TensorFlow"/>
                             <span>TensorFlow</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-5 h-5 mr-2" alt="PyTorch"/>
                             <span>PyTorch</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" class="w-5 h-5 mr-2" alt="Scikit-learn"/>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="assets\scikit-learn.svg" class="w-5 h-5 mr-2" alt="Scikit-learn"/>
                             <span>Scikit-learn</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <i class="ph-chat-centered-text text-lg mr-2 text-indigo-600 dark:text-indigo-400"></i>
-                            <span>NLP</span>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <i class="ph-chat-centered-text text-lg mr-2 text-indigo-400"></i>
+                            <span>NLTK</span>
+                        </div>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="assets\huggingface-color.svg" class="w-5 h-5 mr-2" alt="Scikit-learn"/>
+                            <span>HuggingFace</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Big Data -->
-                <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-1">
-                    <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Big Data</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" class="w-5 h-5 mr-2" alt="Apache Spark"/>
-                            <span>Apache Spark</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" class="w-5 h-5 mr-2" alt="Hadoop"/>
-                            <span>Hadoop</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="w-5 h-5 mr-2" alt="AWS"/>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-5 h-5 mr-2" alt="GCP"/>
-                            <span>GCP</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Business Intelligence -->
-                <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-2">
-                    <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Business Intel</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <i class="ph-presentation-chart text-lg mr-2 text-indigo-600 dark:text-indigo-400"></i>
-                            <span>Data Storytelling</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <i class="ph-users text-lg mr-2 text-indigo-600 dark:text-indigo-400"></i>
-                            <span>Stakeholder Mgmt</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <i class="ph-projector-screen-chart text-lg mr-2 text-indigo-600 dark:text-indigo-400"></i>
-                            <span>Dashboard Design</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <i class="ph-lightbulb text-lg mr-2 text-indigo-600 dark:text-indigo-400"></i>
-                            <span>Problem Solving</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Other Tools -->
-                <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-3">
-                    <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Other Tools</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-5 h-5 mr-2" alt="Git"/>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-5 h-5 mr-2" alt="Docker"/>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" class="w-5 h-5 mr-2" alt="Jupyter"/>
-                            <span>Jupyter</span>
-                        </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="w-5 h-5 mr-2" alt="Linux"/>
-                            <span>Linux</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Languages -->
                 <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-4">
                     <div class="flex items-center mb-4 justify-center">
-                        <h3 class="text-xl font-semibold">Languages</h3>
+                        <h3 class="text-xl font-semibold text-white">Languages</h3>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-5 h-5 mr-2" alt="Python"/>
                             <span>Python</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" class="w-5 h-5 mr-2" alt="R"/>
                             <span>R</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="w-5 h-5 mr-2" alt="SQL"/>
                             <span>SQL</span>
                         </div>
-                        <div class="skill-pill flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5 mr-2" alt="JavaScript"/>
                             <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
+                <!-- Other Tools -->
+                <div class="glass-card p-6 rounded-xl shadow-md card-hover fade-in delay-3">
+                    <div class="flex items-center mb-4 justify-center">
+                        <h3 class="text-xl font-semibold text-white">Other Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-5 h-5 mr-2" alt="Git"/>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-5 h-5 mr-2" alt="Docker"/>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" class="w-5 h-5 mr-2" alt="Jupyter"/>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-5 h-5 mr-2" alt="VS Code"/>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-pill flex items-center px-4 py-2 bg-slate-700 rounded-full">
+                            <img src="assets\IBM SPSS Statistics.svg" class="w-5 h-5 mr-2" alt="VS Code"/>
+                            <span>IBM SPSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Languages -->
+                
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-800">
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-800">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in">Featured Projects</h2>
             
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 <!-- Project 1 - Takes 2 columns -->
                 <div class="glass-card rounded-xl overflow-hidden shadow-md card-hover fade-in delay-1 lg:col-span-2">
-                    <div class="h-80 bg-gray-100 dark:bg-gray-800 overflow-hidden">
+                    <div class="h-80 bg-slate-700 overflow-hidden">
                         <img src="assets/Projects/HappyWings/HappyWings-ezgif.com-optimize.gif" 
                              alt="HappyWings" 
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">HappyWings</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Full-stack web application predicting airline passenger satisfaction using XGBoost machine learning model.</p>
+                        <h3 class="text-xl font-semibold mb-2 text-white">HappyWings</h3>
+                        <p class="text-gray-300 mb-4">This project is a responsive, full-stack web application that predicts airline passenger satisfaction using a trained XGBoost machine learning model. It utilizes flight-related data and post-flight passenger feedback to classify satisfaction levels as "Satisfied" or "Not Satisfied".</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <div>
-                                <span class="text-gray-600 dark:text-gray-300 text-sm">Frontend:</span>
-                                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">HTML</span>
-                                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">CSS</span>
-                                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Bootstrap</span>
+                                <span class="text-gray-300 text-sm">Frontend:</span>
+                                <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">HTML</span>
+                                <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">CSS</span>
+                                <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">Bootstrap</span>
                             </div>
                             <div>
-                                <span class="text-gray-600 dark:text-gray-300 text-sm">Backend:</span>
-                                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Flask</span>
+                                <span class="text-gray-300 text-sm">Backend:</span>
+                                <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">Flask</span>
                             </div>
                             <div>
-                                <span class="text-gray-600 dark:text-gray-300 text-sm">Database:</span>
-                                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">PostgreSQL</span>
+                                <span class="text-gray-300 text-sm">Database:</span>
+                                <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">PostgreSQL</span>
                             </div>
                         </div>
                         <div class="flex space-x-4">
                             <a href="https://github.com/Mafaz5128/Web-Application---Predicting-Airline-Passenger-Satisfaction-Using-Machine-Learning-Model" 
-                               class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300">
+                               class="text-indigo-400 hover:text-indigo-300 font-medium text-sm">
+                               <span class="text-gray-300">Checkout Here: </span>
                                <i class="fab fa-github"></i> Code
                             </a>
                         </div>
@@ -527,38 +449,26 @@
                 <!-- Power BI Dashboards - Takes 2 columns -->
                 <div class="glass-card rounded-xl overflow-hidden shadow-md card-hover fade-in delay-2 lg:col-span-2">
                     <!-- Carousel container -->
-                    <div class="h-80 bg-gray-100 dark:bg-gray-800 overflow-hidden relative">
+                    <div class="h-80 bg-slate-700 overflow-hidden relative">
                         <!-- Dashboard slides -->
                         <div class="carousel-slide active" id="powerbi-slide-1">
                             <img src="assets/Projects/Power Bi/Amazon Sales.png" 
-                                 class="w-full h-full object-contain bg-white p-2">
-                            <div class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
-                                Amazon Sales Dashboard
-                            </div>
+                                 class="w-full h-full ">
                         </div>
                         
                         <div class="carousel-slide" id="powerbi-slide-2">
                             <img src="assets/Projects/Power Bi/HealthCare.png" 
-                                 class="w-full h-full object-contain bg-white p-2">
-                            <div class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
-                                Healthcare No-Shows Analysis
-                            </div>
+                                 class="w-full h-full ">
                         </div>
                         
                         <div class="carousel-slide" id="powerbi-slide-3">
                             <img src="assets/Projects/Power Bi/Energy.png" 
-                                 class="w-full h-full object-contain bg-white p-2">
-                            <div class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
-                                Energy Consumption Dashboard
-                            </div>
+                                 class="w-full h-full ">
                         </div>
                         
                         <div class="carousel-slide" id="powerbi-slide-4">
                             <img src="assets/Projects/Power Bi/HR.png" 
-                                 class="w-full h-full object-contain bg-white p-2">
-                            <div class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
-                                HR Analytics - Lead Time
-                            </div>
+                                 class="w-full h-full">
                         </div>
                         
                         <!-- Navigation Dots -->
@@ -571,42 +481,48 @@
                     </div>
 
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Power BI - Dashboards/Reports</h3>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Power BI - Dashboards/Reports</h3>
                         
                         <!-- Dashboard Descriptions -->
                         <div id="dashboard-descriptions">
                             <div class="dashboard-desc active-desc" id="desc-1">
-                                <h4 class="font-medium text-gray-700 dark:text-gray-200">Amazon Sales Dashboard</h4>
-                                <p class="text-gray-600 dark:text-gray-300 text-sm">Tracked sales performance across regions with interactive drill-down capabilities and YoY comparisons</p>
+                                <h4 class="font-medium text-gray-200">Amazon Sales Dashboard</h4>
+                                <p class="text-gray-300 text-sm">Dashboard provides key sales metrics, regional performance, market trends, and product profitability insights</p>
+                                <a href="https://app.powerbi.com/groups/me/reports/478ae5ec-b27a-4a6d-92c6-ea26b3511cbe/2ab1808bfa1107ded20c?experience=power-bi" class="text-red-600 font-bold text-m animate-pulse flex items-center gap-1 hover:text-red-500">Live</a>
                             </div>
                             
-                            <div class="dashboard-desc hidden" id="desc-2">
-                                <h4 class="font-medium text-gray-700 dark:text-gray-200">Healthcare No-Shows</h4>
-                                <p class="text-gray-600 dark:text-gray-300 text-sm">Analyzed patient appointment patterns to reduce missed appointments by 32%</p>
+                            <div class="dashboard-desc active-desc" id="desc-2">
+                                <h4 class="font-medium text-gray-200">Healthcare No-Shows</h4>
+                                <p class="text-gray-300 text-sm">Insights reveal no-show trends by gender and age, health conditions, scheduling gaps, and neighborhood disparities</p>
+                                <a href="https://app.powerbi.com/groups/me/reports/538c6d7b-b82d-479b-b729-af266ff97b41/9900a7410ba7de6c885b?experience=power-bi" class="text-red-600 font-bold text-m animate-pulse flex items-center gap-1 hover:text-red-500">Live</a>
                             </div>
                             
-                            <div class="dashboard-desc hidden" id="desc-3">
-                                <h4 class="font-medium text-gray-700 dark:text-gray-200">Energy Consumption</h4>
-                                <p class="text-gray-600 dark:text-gray-300 text-sm">Monitored utility usage across facilities to identify 18% cost-saving opportunities</p>
+                            <div class="dashboard-desc active-desc" id="desc-3">
+                                <h4 class="font-medium text-gray-200">Energy Consumption</h4>
+                                <p class="text-gray-300 text-sm">This Power BI dashboard analyzes energy consumption and costs (Electricity, Gas, Water) from 2016–2019 across buildings, with trends by year, month, city, building, and energy type</p>
+                                <a href="https://app.powerbi.com/groups/me/reports/43309a01-b162-4362-b80d-f2c59269a9f3/6d4ba70af4c9301c324f?experience=power-bi" class="text-red-600 font-bold text-m animate-pulse flex items-center gap-1 hover:text-red-500">Live</a>
                             </div>
                             
-                            <div class="dashboard-desc hidden" id="desc-4">
-                                <h4 class="font-medium text-gray-700 dark:text-gray-200">HR Analytics</h4>
-                                <p class="text-gray-600 dark:text-gray-300 text-sm">Reduced hiring lead time by 22% through process optimization analysis</p>
+                            <div class="dashboard-desc active-desc" id="desc-4">
+                                <h4 class="font-medium text-gray-200">HR Analytics</h4>
+                                <p class="text-gray-300 text-sm">This Power BI dashboard tracks executive-level recruitment lead times across SBUs in 2025, enabling HR teams to monitor hiring volume, identify delays, evaluate KPI compliance, and analyze performance with monthly and SBU-level filters.</p>
+                                <a href="https://app.powerbi.com/groups/me/reports/dde24927-0dae-4885-b45e-847bb97202b2/d00a8b511e376999e464?experience=power-bi" class="text-red-600 font-bold text-m animate-pulse flex items-center gap-1 hover:text-red-500">Live</a>
+
                             </div>
                         </div>
-
+                        <br>
                         <!-- Tags -->
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Power BI</span>
-                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">DAX</span>
-                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Power Query</span>
+                            <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">Power BI</span>
+                            <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">DAX</span>
+                            <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 text-sm rounded-full">Power Query</span>
                         </div>
 
                         <!-- Links -->
                         <div class="flex flex-wrap gap-4">
-                            <a href="https://github.com/Mafaz5128/Power-Bi-Projects" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 font-medium text-sm">
-                                <i class="ph-github-logo mr-1"></i> GitHub
+                            <a href="https://github.com/Mafaz5128/Power-Bi-Projects" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm">
+                                <span class="text-gray-300">Checkout Here: </span> 
+                                <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -622,7 +538,7 @@
             
             <div class="relative">
                 <!-- Timeline line -->
-                <div class="hidden md:block absolute left-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700 transform -translate-x-1/2"></div>
+                <div class="hidden md:block absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
                 
                 <!-- Timeline items -->
                 <div class="space-y-8 md:space-y-16">
@@ -633,7 +549,7 @@
                                     <h3 class="text-2xl font-semibold">Data Analyst - Intern</h3><br>
                                     <h3 class="text-lg font-semibold">Department of Revenue Management and Network Planning</h3><br>
                                     <p class="text-2xl gradient-text">SriLankan Airlines</p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Nov 2024 - Feb 2025</p>
+                                    <p class="text-gray-400 text-sm">Nov 2024 - Feb 2025</p>
                                 </div>
                             </div>
                             <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white mx-auto z-10">
@@ -641,7 +557,7 @@
                             </div>
                             <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
                                 <div class="md:ml-8 glass-card p-6 rounded-lg shadow-md card-hover">
-                                    <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-2">
+                                    <ul class="list-disc pl-5 text-gray-300 space-y-2">
                                         <li>Analyzed forward bookings, station-level sales, and airline inventory to support revenue decisions.</li>
                                         <li>Built interactive dashboards using Power BI and Streamlit to visualize air travel metrics and sales performance.</li>
                                         <li>Developed a forecasting model using time series methods to predict average fares for specific routes and periods.</li>
@@ -666,36 +582,36 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="fade-in delay-1">
                     <h3 class="text-2xl font-semibold mb-6">Let's Work Together</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-8">Whether you have a project in mind, want to discuss potential opportunities, feel free to reach out. I'm always open to interesting conversations and collaborations.</p>
+                    <p class="text-gray-400 mb-8">Whether you have a project in mind, want to discuss potential opportunities, feel free to reach out. I'm always open to interesting conversations and collaborations.</p>
                     
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="text-indigo-600 dark:text-indigo-400 mr-4 mt-1">
+                            <div class="text-indigo-400 mr-4 mt-1">
                                 <i class="ph-envelope-simple text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold">Email</h4>
-                                <a href="mailto:mafazmohamed4u@gmail.com" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">mafazmohamed4u@gmail.com</a>
+                                <a href="mailto:mafazmohamed4u@gmail.com" class="text-gray-300 hover:text-indigo-400 transition">mafazmohamed4u@gmail.com</a>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-indigo-600 dark:text-indigo-400 mr-4 mt-1">
+                            <div class="text-indigo-400 mr-4 mt-1">
                                 <i class="ph-phone text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold">Phone</h4>
-                                <a href="tel:+94765494261" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">+94 76 549 4261</a>
+                                <a href="tel:+94765494261" class="text-gray-300 hover:text-indigo-400 transition">+94 76 549 4261</a>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-indigo-600 dark:text-indigo-400 mr-4 mt-1">
+                            <div class="text-indigo-400 mr-4 mt-1">
                                 <i class="ph-map-pin text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold">Location</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Colombo, Sri Lanka</p>
+                                <p class="text-gray-300">Colombo, Sri Lanka</p>
                             </div>
                         </div>
                     </div>
@@ -703,13 +619,13 @@
                     <div class="mt-8">
                         <h4 class="font-semibold mb-4">Connect With Me</h4>
                         <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/mafaz-mohamed/" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 transition">
+                            <a href="https://www.linkedin.com/in/mafaz-mohamed/" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition">
                                  <img src="assets/linkedin-svgrepo-com.svg" alt="linkedin">
                             </a>
-                            <a href="https://github.com/Mafaz5128/" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 transition">
+                            <a href="https://github.com/Mafaz5128/" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition">
                                 <img src="assets/github-142-svgrepo-com.svg" alt="Github">
                             </a>
-                            <a href="https://www.kaggle.com/mafazmohamed" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 transition">
+                            <a href="https://www.kaggle.com/mafazmohamed" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition">
                                 <img src="assets/kaggle-svgrepo-com.svg" alt="Kaggle">
                             </a>
                         </div>
@@ -719,23 +635,23 @@
                 <div class="fade-in delay-2">
                     <form class="glass-card p-8 rounded-xl shadow-md card-hover">
                         <div class="mb-6">
-                            <label for="name" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800">
+                            <label for="name" class="block text-gray-300 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-800">
                         </div>
                         
                         <div class="mb-6">
-                            <label for="email" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800">
+                            <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-800">
                         </div>
                         
                         <div class="mb-6">
-                            <label for="subject" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800">
+                            <label for="subject" class="block text-gray-300 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-800">
                         </div>
                         
                         <div class="mb-6">
-                            <label for="message" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800"></textarea>
+                            <label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-800"></textarea>
                         </div>
                         
                         <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition shadow-md hover:shadow-lg">Send Message</button>
@@ -745,8 +661,7 @@
         </div>
     </section>
 
-    <!-- Back to top button -->
-   <!-- Back to Top Button -->
+    <!-- Back to Top Button -->
     <button id="backToTop" 
         class="fixed bottom-6 right-6 p-3 bg-gradient-to-r from-indigo-600 to-purple-600 
             text-white rounded-full shadow-lg hover:scale-105 hover:shadow-xl 
@@ -881,7 +796,7 @@
 
             // Start auto-rotation
             function startCarousel() {
-                carouselInterval = setInterval(nextSlide, 3000);
+                carouselInterval = setInterval(nextSlide, 5000);
             }
 
             // Pause auto-rotation
